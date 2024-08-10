@@ -260,14 +260,17 @@ img {
   display: flex;
   gap: 24px;
 }
-.menu-team {
+
+.team-list .menu-team {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .div-text-team {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .title-name {
   font-weight: 500;
@@ -284,6 +287,27 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.list-icon {
+  display: flex;
+  gap: 24px;
+}
+
+.list-icon .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-icon .link-icon:hover {
+  background-color: #404bbf;
 }
 /* #endregion team */
 
@@ -310,6 +334,37 @@ img {
 
 .item-portfolio {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.item-portfolio:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.item-portfolio:hover .portfolio-cover-text {
+  transform: translate(0);
+}
+
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  background-color: #4d5ae5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .div-text {
@@ -341,6 +396,16 @@ img {
   padding-bottom: 100px;
 }
 
+.section-footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-logo-footer {
+  max-width: 264px;
+  margin-right: 120px;
+}
+
 .link-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -356,4 +421,37 @@ img {
   color: #f4f4fd;
   max-width: 264px;
 }
+
+.container-list-footer {
+}
+
+.text-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.list-footer {
+  display: flex;
+  gap: 16px;
+}
+
+.list-footer .link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-footer .link-footer:hover {
+  background-color: #31d0aa;
+}
+
 /* #endregion footer */
